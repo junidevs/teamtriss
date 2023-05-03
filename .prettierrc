@@ -1,0 +1,10 @@
+{
+  "semi": false,
+  "importOrder": [
+    "^react$",
+    "^(?!@/|\\.|test-utils)",
+    "^(@/(.*))|(test-utils)",
+    "^[./]"
+  ],
+  "importOrderSeparation": true
+}
