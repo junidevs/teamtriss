@@ -1,7 +1,11 @@
 {
   "compilerOptions": {
     "target": "esnext",
-    "lib": ["dom", "dom.iterable", "esnext"],
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
     "allowJs": true,
     "skipLibCheck": true,
     "strict": true,
@@ -15,9 +19,15 @@
     "jsx": "preserve",
     "baseUrl": ".",
     "paths": {
-      "@/*": ["src/*"],
-      "test-utils": ["src/testUtils/test-utils"],
-      "render-hook-utils": ["src/testUtils/render-hook-utils"]
+      "@/*": [
+        "src/*"
+      ],
+      "test-utils": [
+        "src/testUtils/test-utils"
+      ],
+      "render-hook-utils": [
+        "src/testUtils/render-hook-utils"
+      ]
     },
     "incremental": true
   },
@@ -28,5 +38,7 @@
     "./src/**/*.ts",
     "./src/**/*.tsx"
   ],
-  "exclude": ["./node_modules"]
+  "exclude": [
+    "./node_modules"
+  ]
 }

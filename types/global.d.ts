@@ -7,6 +7,7 @@ import type { NextPage } from "next"
 import type { AppProps } from "next/app"
 import { LinkProps } from "next/link"
 
+
 declare global {
   // extend global window object
   interface Window {
@@ -1355,9 +1356,9 @@ declare global {
     created: string
     deleted: boolean
     country: {
-      code: string
-      code3l: string
-      flag: string
+      code: string,
+      code3l: string,
+      flag: string,
       name: string
     }
   }
