@@ -1,4 +1,4 @@
-import React, { ForwardedRef, forwardRef } from "react"
+import {createElement, ForwardedRef, forwardRef} from "react"
 
 import { UrlObject } from "url"
 
@@ -26,7 +26,7 @@ jest.doMock("next/link", () =>
     ) => {
       if (typeof href === "object") {
         if (Object.keys(href.query as Record<string, string>).length > 0) {
-          return React.createElement(
+          return createElement(
             "a",
             {
               ...props,
@@ -39,7 +39,7 @@ jest.doMock("next/link", () =>
           )
         }
 
-        return React.createElement(
+        return createElement(
           "a",
           {
             ...props,
@@ -50,7 +50,7 @@ jest.doMock("next/link", () =>
         )
       }
 
-      return React.createElement(
+      return createElement(
         "a",
         {
           ...props,
