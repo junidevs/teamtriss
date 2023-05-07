@@ -1,0 +1,18 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "noEmit": true,
+    "showConfig": true
+  },
+  "exclude": ["./node_modules"],
+  "include": [
+    "next-env.d.ts",
+    "./types/**/*.ts",
+    "./types/**/*.tsx",
+    "**/*.test.ts",
+    "**/*.test.tsx",
+    "./jest.*",
+    "./src/testUtils/*",
+    "./src/mocks/*"
+  ]
+}
