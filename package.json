@@ -3,11 +3,16 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "cross-env NODE_OPTIONS='--inspect' next dev",
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build"
+  },
+  "resolutions": {
+    "webpack": "^5"
   },
   "dependencies": {
     "@emotion/cache": "^11.10.5",
@@ -52,6 +57,13 @@
   "devDependencies": {
     "@commitlint/cli": "^17.6.3",
     "@commitlint/config-conventional": "^17.6.3",
+    "@storybook/addon-essentials": "^7.0.9",
+    "@storybook/addon-interactions": "^7.0.9",
+    "@storybook/addon-links": "^7.0.9",
+    "@storybook/blocks": "^7.0.9",
+    "@storybook/nextjs": "^7.0.9",
+    "@storybook/react": "^7.0.9",
+    "@storybook/testing-library": "^0.0.14-next.2",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.3.0",
     "@testing-library/user-event": "^14.4.3",
@@ -63,6 +75,7 @@
     "@types/node": "^16.0.0",
     "@typescript-eslint/eslint-plugin": "5.12.1",
     "@typescript-eslint/parser": "^5.12.1",
+    "cross-env": "^7.0.3",
     "css-mediaquery": "^0.1.2",
     "eslint-config-airbnb": "18.2.1",
     "eslint-config-next": "^13.2.1",
@@ -88,7 +101,8 @@
     "msw": "^1.2.1",
     "node-mocks-http": "^1.11.0",
     "pre-commit": "^1.2.2",
-    "prettier": "2.8.8"
+    "prettier": "2.8.8",
+    "storybook": "^7.0.9"
   },
   "pre-commit": [
     "lint",
