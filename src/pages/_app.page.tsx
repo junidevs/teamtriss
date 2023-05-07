@@ -10,7 +10,6 @@ import NextNProgress from "nextjs-progressbar"
 import AppWrapper from "@/AppWrapper"
 import useToggleReactQueryClient from "@/hooks/useToggleReactQueryClient"
 import reactQueryClientOptions from "@/reactQueryClientOptions"
-import "@/styles/imageComponent.css"
 import palette from "@/theme/palette"
 import { createEmotionCache } from "@/utils/emotionCache"
 

@@ -4,10 +4,11 @@ import { enUS, plPL } from "@mui/material/locale"
 import { createTheme, ThemeProvider } from "@mui/material/styles"
 import { QueryClient } from "@tanstack/react-query"
 import { useRouter } from "next/router"
-import { SnackbarProvider } from "@/providers/SnackbarProvider"
-import QueryClientProvider from "@/providers/QueryClientProvider/QueryClientProvider"
+
 import { NotificationsUIProvider } from "@/providers/NotificationsUIProvider"
 import theme from "@/theme"
+import { SnackbarProvider } from "@/providers/SnackbarProvider"
+import QueryClientProvider from "@/providers/QueryClientProvider"
 
 type AppWrapperProps = {
   reactQueryClient: QueryClient

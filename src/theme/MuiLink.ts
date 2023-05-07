@@ -1,6 +1,5 @@
 import { LinkProps } from "@mui/material/Link"
-
-import ComposableLink from "@/components/ui/ComposableLink"
+import ComposableLink from "@/components/reusable/ComposableLink"
 
 const MuiLink = {
   defaultProps: {

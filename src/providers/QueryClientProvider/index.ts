@@ -1,1 +1,1 @@
-export * from "./QueryClientProvider"
+export { default } from "./QueryClientProvider"
