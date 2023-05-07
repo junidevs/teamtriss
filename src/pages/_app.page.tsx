@@ -1,4 +1,4 @@
-import { ReactElement, useEffect, useState } from "react"
+import { ReactElement, useState } from "react"
 
 import { CacheProvider } from "@emotion/react"
 import CssBaseline from "@mui/material/CssBaseline"
